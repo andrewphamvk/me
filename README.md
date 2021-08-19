@@ -9,10 +9,18 @@ This is the source for my personal website. Coming soon.
 
 ## Yarn (Berry)
 
-Yarn has always been faster than npm hands down. With Yarn (Berry) and Plug'n'Play the installs are even better.
+Yarn has always been faster than npm hands down. With Yarn (Berry) and Plug'n'Play the installs are even faster. Downside is that it doesn't work for some scenarios (React Native) and is still not the standard version of Yarn.
 
 - https://dev.to/arcanis/introducing-yarn-2-4eh1
 - https://dev.to/arcanis/yarn-3-0-performances-esbuild-better-patches-e07
+
+Steps: 
+
+1. `yarn set version berry`
+2. Add `nodeLinker: pnp` in `.yarnrc.yml` file
+3. `yarn dlx @yarnpkg/sdks vscode`
+4. [Use workspace version](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript) of TypeScript.
+
 
 ## Next.js
 

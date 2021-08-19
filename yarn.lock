@@ -274,7 +274,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^16.6.2":
   version: 16.6.2
   resolution: "@types/node@npm:16.6.2"
   checksum: 2245e50058ac49ab3d76af5ded7fc655d783a88a800139dad6caaf962f15c909287853012c9461b49600741bcc2b09042f94ce734f0440b6ad444d838e62904a
@@ -2805,6 +2805,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "me@workspace:."
   dependencies:
+    "@types/node": ^16.6.2
     "@types/react": 17.0.19
     eslint: 7.32.0
     eslint-config-next: 11.1.0
