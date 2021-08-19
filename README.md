@@ -6,6 +6,8 @@ This is the source for my personal website. Coming soon.
 
 - [Next.js](#nextjs)
 - [Yarn (Berry)](#yarn-berry)
+- [Tailwindcss](#tailwindcss)
+- [heroicons](#heroicons)
 
 ## Next.js
 
@@ -13,9 +15,8 @@ The choice was between Next.js, Gatsby.js and basic React. I'm already familiar 
 
 Steps:
 
-- `yarn create next-app --typescript`
-- `yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest`
-- `npx tailwindcss init -p`
+1. Initialize the project `yarn create next-app --typescript me`
+2. `npx tailwindcss init -p`
 
 ## Yarn (Berry)
 
@@ -30,6 +31,20 @@ Steps:
 2. Add `nodeLinker: pnp` in `.yarnrc.yml` file
 3. `yarn dlx @yarnpkg/sdks vscode`
 4. [Use workspace version](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript) of TypeScript.
+
+## Tailwindcss
+
+Because I don't have much experience with CSS, it's been hard for me to structure my CSS classes in a way that doesn't end up creating ugly duplicated classes or a spider web of accidental reuse. At which point I would not be able remove CSS code confidently without knowing which components I had been affected.
+
+Tailwindcss eliminates that and provides atomic css that has great responsive support. Version 2.2 recently launched and one of the exciting features is [Just-in-Time mode](https://tailwindcss.com/docs/just-in-time-mode) that enables arbitrary css classes.
+
+Usually for projects that I don't plan to spend too much on the design I would use Chakra UI. In this case I want to be able to finely customize the design for better or for worse. 🙂
+
+Steps:
+
+1. `yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest`
+
+## Heroicons
 
 # License
 
