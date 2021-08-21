@@ -6,7 +6,11 @@ module.exports = {
     fontFamily: {
       sans: 'Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     },
-    extend: {},
+    extend: {
+      lineHeight: {
+        0: "0",
+      },
+    },
   },
   variants: {
     extend: {},

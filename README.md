@@ -16,7 +16,6 @@ The choice was between Next.js, Gatsby.js and basic React. I'm already familiar 
 Steps:
 
 1. Initialize the project `yarn create next-app --typescript me`
-2. `npx tailwindcss init -p`
 
 ## Yarn (Berry)
 
@@ -43,8 +42,17 @@ Usually for projects that I don't plan to spend too much on the design I would u
 Steps:
 
 1. `yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest`
+2. `npx tailwindcss init -p`
 
-## Heroicons
+## Font Awesome
+
+Comprehensive set of icons for anything you could possibly want. I was debating whether or not to use the React component or basic CSS. To be honest, the React components don't feel any easier to use. I just wanted to try it out.
+
+The good thing is that only the fonts used will be part of the bundle.
+
+Steps:
+
+1. yarn add @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 
 # License
 

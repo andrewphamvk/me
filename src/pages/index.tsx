@@ -1,5 +1,8 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { NextPage } from "next";
 import Head from "next/head";
+import React from "react";
 
 const Home: NextPage = () => {
   return (
@@ -48,7 +51,31 @@ const Home: NextPage = () => {
           </svg>
         </section>
       </main>
-      <footer></footer>
+      <footer className="max-w-md mx-auto">
+        <div className="flex content-end justify-between">
+          <div className="">Andrew Pham @ {new Date().getFullYear()}</div>
+          <div className="text-2xl leading-0 space-x-2">
+            <a
+              href="https://github.com/andrewphamvk"
+              aria-label="Go to my GitHub"
+              target="_blank"
+              rel="noreferrer"
+              className="opacity-70 hover:opacity-100"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/andrewphamvk/"
+              aria-label="Go to my LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+              className="opacity-70 hover:opacity-100"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
