@@ -1,13 +1,13 @@
 # [andrewphamvk.me](https://www.andrewphamvk.me/)
 
-This is the source for my personal website. Coming soon.
+This is the source for my personal website.
 
 # Tech Stack
 
 - [Next.js](#nextjs)
 - [Yarn (Berry)](#yarn-berry)
 - [Tailwindcss](#tailwindcss)
-- [heroicons](#heroicons)
+- [Font Awesome](#font-awesome)
 
 ## Next.js
 

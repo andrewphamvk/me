@@ -44,8 +44,16 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className="max-w-lg mx-auto px-2 mt-5 flex text-gray-800">
-        <div className="flex mx-auto items-baseline space-x-3">
+      <footer className="max-w-lg mx-auto px-2 mt-5 flex flex-col text-gray-800">
+        <div className="mx-auto">
+          <a
+            href="https://github.com/andrewphamvk/me"
+            className="hover:underline "
+          >
+            View Source
+          </a>
+        </div>
+        <div className="flex mx-auto items-baseline space-x-2">
           <div className="">Andrew Pham @ {new Date().getFullYear()}</div>
           <div className="text-2xl leading-0 space-x-2">
             <a
