@@ -1,4 +1,8 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faGoodreads,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -18,41 +22,30 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section className="max-w-md mx-auto">
-          <h1 className="text-3xl font-bold">Welcome!</h1>
-          <p className="">
+        <section className="max-w-md mx-auto px-2 text-gray-800 mb-6">
+          <h1 className="text-3xl font-bold mb-5 mt-5 text-center text-gray-900">
+            Hey, I&apos;m Andrew 👋
+          </h1>
+          <p className="mb-3">
             I&apos;m exploring my interests in Front End technologies after
             getting a taste of React in the beginning of 2021.
           </p>
-          <p>
+          <p className="mb-3">
             My main area of expertise is in developing and operating distributed
             enterprise systems and I currently do this on the Fleet Deployment
             Optimization team @ Google. Previously, I worked on the M365 Build
             and Infra team @ Microsoft building the backend infrastructure and
-            tooling to support the M365 product teams.
+            tooling to support the M365 product team.
           </p>
           <p>
-            Outside work, I like reading (self-help, philosophy, fiction) and
-            practicing jiu jitsu (white belt).
+            Outside of work I like reading (self-help, philosophy, fiction),
+            stretching / mobility training and training jiu jitsu.
           </p>
-          <svg
-            className="h-6 w-6 text-indigo-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
         </section>
       </main>
-      <footer className="max-w-md mx-auto">
-        <div className="flex content-end justify-between">
+
+      <footer className="max-w-lg mx-auto px-2 mt-5 flex text-gray-800">
+        <div className="flex mx-auto items-baseline space-x-3">
           <div className="">Andrew Pham @ {new Date().getFullYear()}</div>
           <div className="text-2xl leading-0 space-x-2">
             <a
@@ -60,7 +53,7 @@ const Home: NextPage = () => {
               aria-label="Go to my GitHub"
               target="_blank"
               rel="noreferrer"
-              className="opacity-70 hover:opacity-100"
+              className="text-gray-600 hover:text-gray-800"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -69,9 +62,18 @@ const Home: NextPage = () => {
               aria-label="Go to my LinkedIn"
               target="_blank"
               rel="noreferrer"
-              className="opacity-70 hover:opacity-100"
+              className="text-gray-600 hover:text-gray-800"
             >
               <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://www.goodreads.com/andrewphamvk/"
+              aria-label="Go to my Goodreads"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-600 hover:text-gray-800"
+            >
+              <FontAwesomeIcon icon={faGoodreads} />
             </a>
           </div>
         </div>

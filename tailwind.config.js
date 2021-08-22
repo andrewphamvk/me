@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: 'Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+      sans: "-apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Canterell, Helvetica Neue",
     },
     extend: {
       lineHeight: {
